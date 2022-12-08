@@ -5,23 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <header>
-            <h2>uma seleção de produtos</h2>
+    <header class="header">
+            <span>uma seleção de produtos</span>
             <h1>especial para você</h1>
             <span>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</span>
-            <button class="menu">Conheça a Linx</button>
-            <button class="menu">Ajude o algoritmo</button>
-            <button class="menu">Seus produtos</button>
-            <button class="menu">compartilhe</button>
+            <div class="buttons">
+                <button class="menu">Conheça a Linx</button>
+                <button class="menu">Ajude o algoritmo</button>
+                <button class="menu">Seus produtos</button>
+                <button class="menu">Compartilhe</button>
+            </div>
     </header>
-    <main>
-        <h2>Ajude o algoritmo a ser mais certeiro</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, reiciendis labore natus sunt sint quam ipsam porro tempora, repudiandae illum exercitationem ipsum voluptatem quos nulla. Sequi assumenda ea provident laudantium.lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam maiores incidunt autem fuga quas ullam repudiandae voluptatibus recusandae, esse cupiditate, exercitationem officia explicabo est nesciunt aspernatur enim ipsa amet odio.</p>
-        <section>
-            <form action="">
+    <main class="main">
+        <section class="form-section">
+            <div class="form-guide">
+                <h2>Ajude o algoritmo a ser mais certeiro</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies tellus nec mi porta convallis sollicitudin eu urna. Mauris rhoncus erat sed interdum dignissim. Suspendisse semper pretium consectetur. Praesent bibendum arcu risus, sit amet iaculis ex tempus quis. Cras et erat ut tellus vulputate tincidunt. Aenean lacinia euismod augue vel egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum vel urna tortor. Vivamus et arcu non felis tristique eleifend.
+                </p>
+                <p>
+                    Morbi eu condimentum urna. Curabitur eu magna eget turpis condimentum ultrices. Suspendisse quis lorem ultricies, pulvinar purus sed, egestas erat. Etiam ultricies a ante vehicula pharetra. Quisque ut neque mattis, consequat velit ut, ultrices orci. Nulla varius elementum erat vel pharetra. Aenean sit amet nisi diam. Morbi viverra, magna ac luctus commodo, odio ante suscipit libero, at mattis augue est vel metus.
+                </p>
+            </div>
+
+            <form class="form">
                 <div class="input-wrapper">
                     <label>Seu nome:</label>
                     <input type="text">
@@ -41,7 +50,7 @@
                 <input id="womam" type="radio">
                 <label for="womam">Feminino</label>
 
-                <button type="submit" class="submit">Enviar</button>
+                <button type="submit" class="btn-submit">Enviar</button>
             </form>
         </section>
         <section>
@@ -101,7 +110,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <span>Testando suas habilidades em HTML, CSS e JS.</span>
         <span>Linx Impulse</span>
         <span>2019</span>

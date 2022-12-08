@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #888888;
+}
+.header{ 
+    height: 400px;
+    background-color: #707070;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
+    padding-top: 60px;
+
+    span:first-child{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    h1{
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
+    span{
+        font-size: 14px;
+        margin-bottom: 60px;
+    }
+    h2,h1,span{
+        display: flex;
+        justify-content: center;
+        color:#fff;
+
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        flex-flow: row wrap;
+        width: 770px;
+
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: row wrap;
+            border-radius: 4px;
+            color: #888;
+            border:none;
+            width: 160px;
+            height: 40px;
+        }
+    }
+}
+
+.main{
+    width: 60%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: auto;
+
+    .form-section{
+        display: flex;
+        padding-bottom: 100px;
+        .form-guide{
+            max-width: 520px;
+            padding-right: 60px;
+            h2{
+                font-weight: 100;
+                margin-bottom: 30px;
+                font-size: 20px;
+            }
+            p{
+                text-align:left;
+                
+                margin-bottom: 20px;
+                font-size: 15px;
+            } 
+        }
+          
+        }
+       
+        .form{
+            .input-wrapper{
+                label{
+                    display: block;
+                }
+                input{
+                    height: 30px;
+                    width: 350px;
+                    margin-bottom: 30px;
+                }
+            }
+
+            button{
+                display: block;
+                width: 350px;
+                height: 40px;
+                margin-top: 30px;
+                background-color: #fff;
+                color:#888;
+                border:1px solid #707070;
+                border-radius: 4px;
+                font-size: 16px;
+            }
+        }
+    }
+
+.footer{
+    display: flex;
+    flex-direction: column wrap;
+    justify-content: center;
+}
