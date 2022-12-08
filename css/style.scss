@@ -8,9 +8,10 @@ body{
     color: #888888;
 }
 .header{ 
-    height: 400px;
+    position: relative;
+    height: 500px;
     background-color: #707070;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
+    clip-path: polygon(0 0, 100% 0, 100% 92%, 0 73%);
     padding-top: 60px;
 
     span:first-child{
@@ -36,24 +37,25 @@ body{
         justify-content: space-around;
         margin: auto;
         flex-flow: row wrap;
-        width: 770px;
-
+        position: absolute;
+        width: 100%;
         button{
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-flow: row wrap;
+            flex-flow: row nowrap;
             border-radius: 4px;
             color: #888;
             border:none;
+            margin:10px;
             width: 160px;
             height: 40px;
+            
         }
     }
 }
 
 .main{
-    width: 60%;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -61,10 +63,15 @@ body{
 
     .form-section{
         display: flex;
-        padding-bottom: 100px;
+        flex-flow: row wrap;
+        padding-bottom: 50px;
+
         .form-guide{
-            max-width: 520px;
-            padding-right: 60px;
+            display: flex;
+            flex-flow: column nowrap;
+            margin: auto;
+            width: 620px;
+            padding: 20px;
             h2{
                 font-weight: 100;
                 margin-bottom: 30px;
@@ -72,7 +79,6 @@ body{
             }
             p{
                 text-align:left;
-                
                 margin-bottom: 20px;
                 font-size: 15px;
             } 
@@ -81,21 +87,28 @@ body{
         }
        
         .form{
+            margin: auto;
+            padding: 20px;
+            width: 620px;
             .input-wrapper{
                 label{
                     display: block;
                 }
                 input{
-                    height: 30px;
-                    width: 350px;
+                    height: 40px;
+                    width: 100%;
                     margin-bottom: 30px;
+                    border: 1px solid #707070;
+                    border-radius: 4px;
                 }
             }
-
+            #womam-input{
+                margin-left: 60px;
+            }
             button{
                 display: block;
-                width: 350px;
-                height: 40px;
+                width: 100%;
+                height: 50px;
                 margin-top: 30px;
                 background-color: #fff;
                 color:#888;
@@ -104,10 +117,118 @@ body{
                 font-size: 16px;
             }
         }
+
+        .sell-section{
+            display: flex;
+            flex-flow: row wrap;
+            h2{
+                width: 100%;
+                text-align: center;
+            }
+            .control-products{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                width: 100%;
+                .info-product{
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: center;
+                    padding: 20px;
+    
+                    .empty-box{
+                        width: 200px;
+                        height: 150px;
+                        border: 1px solid black;
+                    }
+                    button{
+                        background-color: #fff;
+                        border:1px solid #707070;
+                        border-radius: 3px;
+                    }
+                }
+            }
+           
+            .more-products{
+                background-color: #fff;
+                border:1px solid #707070;
+                border-radius: 3px;
+                text-align: center;
+                line-height: 250%;
+                width:260px;
+                height: 40px;
+                margin: auto;
+            }
+            
+        }
+
+        .share-section{
+            h2{
+                width: 100%;
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                font-size: 15px;
+                padding: 60px;
+            }
+            .friend-form{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                width: 720px;
+
+                label{
+                    display: block;
+                    padding-top: 20px;
+                    padding-left: 20px;
+                }
+                input{
+                    height: 40px;
+                    width: 300px;
+                    margin-left: 20px;
+                    margin-bottom: 30px;
+                    border: 1px solid #707070;
+                    border-radius: 4px;
+                }
+                button{
+                    background-color: #fff;
+                    border:1px solid #707070;
+                    border-radius: 3px;
+                    text-align: center;
+                    line-height: 250%;
+                    width:260px;
+                    height: 40px;
+                    margin: auto;
+                }
+            }
+        }
+
     }
 
 .footer{
     display: flex;
     flex-direction: column wrap;
     justify-content: center;
+    position: relative;
+    background-color: #707070;
+    clip-path: polygon(0 24%, 100% 6%, 100% 100%, 0% 100%);
+    height: 250px;
+    color: #fff;
+    span{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        position: absolute; 
+        font-size: 15px;    
+    }
+    span:first-child{
+        top: 40%;
+    }
+    .brand{
+        top:50%;
+    }
+    .year{
+        top:60%;
+    }
 }
